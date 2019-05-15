@@ -1,0 +1,4 @@
+D:\Java_software\idea_space\spring-cloud\feign-demo\api\src\main\java\com\kevin\api\entity\User.java
+D:\Java_software\idea_space\spring-cloud\feign-demo\api\src\main\java\com\kevin\api\FeignDemoApplication.java
+D:\Java_software\idea_space\spring-cloud\feign-demo\api\src\main\java\com\kevin\api\hystrix\UserServiceFallback.java
+D:\Java_software\idea_space\spring-cloud\feign-demo\api\src\main\java\com\kevin\api\UserInterface.java
