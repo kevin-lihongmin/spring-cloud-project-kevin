@@ -65,12 +65,4 @@
 		</plugins>
 	</build>
 
-	<distributionManagement>
-		<repository>
-			<id>kevin-snapshot</id>
-			<name>kevin-repo</name>
-			<url>http://localhost:8081/repository/kevin-repo/</url>
-		</repository>
-	</distributionManagement>
-
 </project>

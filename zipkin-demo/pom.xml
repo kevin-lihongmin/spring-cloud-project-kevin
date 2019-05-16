@@ -5,8 +5,9 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>zipkin-server</module>
-		<module>zipkin-provider</module>
-		<module>zipkin-consumer</module>
+		<module>sleuth-consumer</module>
+		<module>sleuth-provider-provider</module>
+		<module>sleuth-provider</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -26,63 +27,17 @@
 	</properties>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>com.kevin</groupId>
-			<artifactId>eureka-server</artifactId>
-			<version>0.0.1-20190515.090822-1</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zipkin</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-server -->
-		<dependency>
-			<groupId>io.zipkin.java</groupId>
-			<artifactId>zipkin-server</artifactId>
-			<version>2.12.9</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>log4j-to-slf4j</artifactId>
-					<groupId>org.apache.logging.log4j</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>log4j-to-slf4j</artifactId>
-					<groupId>org.apache.logging.log4j</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>log4j-to-slf4j</artifactId>
-					<groupId>org.apache.logging.log4j</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
-
-		<dependency>
-			<groupId>io.zipkin.java</groupId>
-			<artifactId>zipkin-autoconfigure-ui</artifactId>
-			<version>2.12.9</version>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 	</dependencies>
 

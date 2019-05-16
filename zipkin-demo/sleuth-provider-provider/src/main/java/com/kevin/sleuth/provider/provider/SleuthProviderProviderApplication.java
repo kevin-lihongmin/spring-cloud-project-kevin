@@ -1,24 +1,23 @@
-package com.kevin.zipkin.server;
+package com.kevin.sleuth.provider.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import zipkin2.server.internal.EnableZipkinServer;
 
 /**
- *	Zipkin 的服务器端，收集中心
+ *	配置服务器端，启动
  *
  * @author kevin
- * @date 2019/5/14 16:40
+ * @date 2019/5/15 10:42
  * @since
  */
 @EnableEurekaClient
 @SpringBootApplication
-@EnableZipkinServer
-public class ZipkinServerApplication {
+public class SleuthProviderProviderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZipkinServerApplication.class, args);
+
+		SpringApplication.run(SleuthProviderProviderApplication.class, args);
 	}
 
 }
