@@ -30,5 +30,7 @@
 
 #### `zuul-demo` Api网关
 
-   
+#### `spring-cloud-zookeeper-demo` Zookeeper注册中心（服务的提供端和调用端相对于Zookeeper都它的是客户端，所以子项目都加了`-client-`）
+##### `zookeeper-client-provider` 服务端
+##### `zookeeper-client-consumer` 服务的客户端
 
