@@ -18,8 +18,10 @@
 #### `hystrix-dashboard` 熔断器UI，监控hystrix-client服务的信息
 
 
-#### `user-provider` ribbon服务端
-#### `user-consumer` ribbon客户端
+#### `ribbon-demo` ribbon实现服务的调用
+* `ribbon-provider` 提供服务列表
+* `ribbon-consumer` 客户端本地配置Ribbon服务列表，实现客户端的负载均衡
+* `ribbon-consumer-eureka` 客户端根据服务端的名称从注册中心获取服务列表，在客户端进行负载均衡
 
 
 #### `zipkin-demo` 服务调用链（sleuth-consumer -> sleuth-provider -> sleuth-provider-provider）

@@ -6,7 +6,8 @@
     <modules>
         <module>ribbon-provider</module>
 		<module>ribbon-consumer</module>
-	</modules>
+        <module>ribbon-consumer-eureka</module>
+    </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
