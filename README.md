@@ -30,9 +30,14 @@
 * `sleuth-provider-provider` 服务端的服务端
 
 
-#### `zuul-demo` Api网关
+#### `zuul-demo` Netflex Zuul实现的Api网关服务
+
+#### `gateway-demo` Spring Cloud Gateway实现的Api网关服务
 
 #### `spring-cloud-zookeeper-demo` Zookeeper注册中心（服务的提供端和调用端相对于Zookeeper都它的是客户端，所以子项目都加了`-client-`）
 * `zookeeper-client-provider` 服务端
 * `zookeeper-client-consumer` 服务的客户端
+
+
+
 
