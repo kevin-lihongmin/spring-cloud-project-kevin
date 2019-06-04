@@ -5,11 +5,11 @@ import com.netflix.zuul.context.RequestContext;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class PreRequestLogFilter extends ZuulFilter {
+public class RouteRequestFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return "pre";
+        return "route";
     }
 
     @Override
@@ -26,7 +26,7 @@ public class PreRequestLogFilter extends ZuulFilter {
     public Object run() {
         RequestContext currentContext = RequestContext.getCurrentContext();
         HttpServletRequest request = currentContext.getRequest();
-        System.out.println(String.format("send %s request to %s", request.getMethod(), request.getRequestURL()));
+        System.out.println("route filter 转换请求信息了！");
         return null;
     }
 }

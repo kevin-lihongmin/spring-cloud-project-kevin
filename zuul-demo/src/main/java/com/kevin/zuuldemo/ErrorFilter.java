@@ -5,11 +5,11 @@ import com.netflix.zuul.context.RequestContext;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class PreRequestLogFilter extends ZuulFilter {
+public class ErrorFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return "pre";
+        return "error";
     }
 
     @Override
@@ -24,9 +24,8 @@ public class PreRequestLogFilter extends ZuulFilter {
 
     @Override
     public Object run() {
-        RequestContext currentContext = RequestContext.getCurrentContext();
-        HttpServletRequest request = currentContext.getRequest();
-        System.out.println(String.format("send %s request to %s", request.getMethod(), request.getRequestURL()));
+        RequestContext ctx = RequestContext.getCurrentContext();
+        System.out.println("到了ErrorFilter，我需要进行处理，转向错误视图！");
         return null;
     }
 }
