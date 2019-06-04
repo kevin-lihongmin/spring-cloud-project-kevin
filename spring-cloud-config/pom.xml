@@ -7,6 +7,7 @@
 		<module>config-server-file</module>
 		<module>config-server-github</module>
 		<module>config-client</module>
+		<module>config-server-mysql</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
