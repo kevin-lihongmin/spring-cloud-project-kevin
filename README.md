@@ -38,6 +38,9 @@
 * `zookeeper-client-provider` 服务端
 * `zookeeper-client-consumer` 服务的客户端
 
-
+#### `consul-demo` Feign实现服务的调用
+* `consul-provider` 服务提供者将服务注册到Consul集群中心
+* `consul-consumer` 服务调用客户端，将服务注册到Consul集群中心
+* `consul-config` 从Consul集群配置中心，获取配置信息
 
 
