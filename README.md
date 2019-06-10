@@ -43,4 +43,10 @@
 * `consul-consumer` 服务调用客户端，将服务注册到Consul集群中心
 * `consul-config` 从Consul集群配置中心，获取配置信息
 
+#### `spring-cloud-config` Spring Cloud Config配置服务器
+* `config-client` 配置客户端
+* `config-server-file` 文件-配置服务端
+* `config-server-github` 远程git（github、gitlab等）-配置服务端
+* `config-server-mysql` mysql数据库-配置服务端
+
 
