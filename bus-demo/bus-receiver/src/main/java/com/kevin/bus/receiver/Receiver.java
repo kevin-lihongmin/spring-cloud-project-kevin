@@ -14,12 +14,9 @@ public class Receiver {
  
     private static final Logger log = LoggerFactory.getLogger(Receiver.class);
 
-    /*@Value("${server.port}")
-    private String port;*/
-
     @RabbitHandler
     public void process(String hello) {
 
-        log.info("Receiver port: {} info : {}", /*port,*/ hello);
+        log.info("Receiver info : {}", hello);
     }
 }

@@ -17,8 +17,8 @@ public class BusSenderApplicationTests {
  
     @Test
     public void hello() throws Exception {
-        for (int i = 0; i < 10; i++) {
-            sender.send();
+        for (int i = 0; i < 100; i++) {
+            sender.send(i);
         }
     }
 }

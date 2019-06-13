@@ -5,10 +5,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Component
 public class Sender {
@@ -18,9 +14,8 @@ public class Sender {
     @Autowired
     private AmqpTemplate amqpTemplate;
 
-    @RequestMapping("send")
-    public void send() {
-        String message = "hello world! ";
+    public void send(int i) {
+        String message = "hello world " + i + " ! ";
         log.info("Sender message : " + message);
         this.amqpTemplate.convertAndSend("hello", message);
     }
